@@ -1,0 +1,793 @@
+steps:
+  PSTG_B_POLICY-12803:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305569
+              stepCounter: "12803"
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSurrogateKey: true
+            name: PSTG_B_POLICY_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 305570
+              stepCounter: "12803"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POLICY_PK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305264
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305571
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POLICY_NO
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305265
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305572
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POLICY_CYCLE_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305266
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305573
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POLICY_TYPE_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305267
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305574
+              stepCounter: "12803"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: REQUESTED_EFF_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305268
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305575
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POL_CURR_STATUS_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305269
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305576
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POL_CURR_REASON_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305270
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305577
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PROCESS_STATUS_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305271
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305578
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOCKED_BY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305272
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305579
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_CREATED_BY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305273
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305580
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_UPDATED_BY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305274
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305581
+              stepCounter: "12803"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_CREATE_TIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305275
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305582
+              stepCounter: "12803"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_UPDATE_TIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305276
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305583
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LEGACY_POLICY_NO
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305277
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305584
+              stepCounter: "12803"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: INCEPTION_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305278
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305585
+              stepCounter: "12803"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECEIVE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305279
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305586
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: REFERRAL_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305280
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305587
+              stepCounter: "12803"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305281
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305588
+              stepCounter: "12803"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SERIAL_NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305282
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305589
+              stepCounter: "12803"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOGON_TIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305283
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305590
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: WIP_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305284
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305591
+              stepCounter: "12803"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOCK_TIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305285
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305592
+              stepCounter: "12803"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LEGACY_ISSUE_COMPANY_FK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305286
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305593
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FACULTATIVE_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305287
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305594
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PROGRAM_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305288
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305595
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FORMATTED_POL_NO
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305289
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305596
+              stepCounter: "12803"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: QUESTIONNAIRE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305290
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305597
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CHAR1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305291
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305598
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CHAR2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305292
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305599
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CHAR3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305293
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305600
+              stepCounter: "12803"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUM1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305294
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305601
+              stepCounter: "12803"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUM2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305295
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305602
+              stepCounter: "12803"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUM3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305296
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305603
+              stepCounter: "12803"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DATE1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305297
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305604
+              stepCounter: "12803"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DATE2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305298
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305605
+              stepCounter: "12803"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DATE3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305299
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305606
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRT_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305300
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305607
+              stepCounter: "12803"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OFF_NUM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305301
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305608
+              stepCounter: "12803"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: WIP_NUM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305302
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305609
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POLICY_LAYER_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305303
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305610
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POLICY_FORM_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305304
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305611
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: QUOTE_CYCLE_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305305
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305612
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POLICY_DESC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305306
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305613
+              stepCounter: "12803"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DSS_RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305307
+                    stepCounter: "12799"
+                transform: ""
+          - columnReference:
+              columnCounter: 305614
+              stepCounter: "12803"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DSS_LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305308
+                    stepCounter: "12799"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305615
+              stepCounter: "12803"
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemVersion: true
+            name: SYSTEM_VERSION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305616
+              stepCounter: "12803"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCurrentFlag: true
+            name: SYSTEM_CURRENT_FLAG
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305617
+              stepCounter: "12803"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemStartDate: true
+            name: SYSTEM_START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305618
+              stepCounter: "12803"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemEndDate: true
+            name: SYSTEM_END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305619
+              stepCounter: "12803"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305620
+              stepCounter: "12803"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SRC
+                nodeName: B_POLICY
+            join:
+              joinCondition: FROM {{ ref('SRC', 'B_POLICY') }} "B_POLICY"
+            name: PSTG_B_POLICY
+            noLinkRefs: []
+      name: PSTG_B_POLICY
+      overrideSQL: false
+      schema: ""
+      sqlType: persistentStage
+      type: sql
+    stepCounter: "12803"

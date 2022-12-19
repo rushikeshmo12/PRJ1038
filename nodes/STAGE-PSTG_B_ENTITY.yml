@@ -1,0 +1,1241 @@
+steps:
+  PSTG_B_ENTITY-12802:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305485
+              stepCounter: "12802"
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSurrogateKey: true
+            name: PSTG_B_ENTITY_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 305486
+              stepCounter: "12802"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ENTITY_PK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305187
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305487
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CLIENT_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305188
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305488
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: GENDER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305189
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305489
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ENTITY_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305190
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305490
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRST_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305191
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305491
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRST_NAME_UPPER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305192
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305492
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MIDDLE_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305193
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305493
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305194
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305494
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME_UPPER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305195
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305495
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME_SOUNDEX
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305196
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305496
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORGANIZATION_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305197
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305497
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORGANIZATION_NAME_UPPER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305198
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305498
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORGANIZATION_NAME_SOUNDEX
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305199
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305499
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PREFIX_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305200
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305500
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SUFFIX_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305201
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305501
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: VERY_LONG_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305202
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305502
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FEDERAL_TAX_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305203
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305503
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOCIAL_SECURITY_NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305204
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305504
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: VERY_IMPORTANT_PERSON_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305205
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305505
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TITLE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305206
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305506
+              stepCounter: "12802"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DATE_OF_BIRTH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305207
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305507
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EMAIL_ADDRESS1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305208
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305508
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EMAIL_ADDRESS2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305209
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305509
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EMAIL_ADDRESS3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305210
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305510
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SSN_VERIFIED_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305211
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305511
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FEDERAL_TAX_ID_VERIFIED_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305212
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305512
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DEFAULT_TAX_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305213
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305513
+              stepCounter: "12802"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TAX_INFO_EFFECTIVE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305214
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305514
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MARITAL_STATUS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305215
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305515
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DECEASED_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305216
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305516
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MINOR_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305217
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305517
+              stepCounter: "12802"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DATE_OF_DEATH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305218
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305518
+              stepCounter: "12802"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DATE_OF_MATURITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305219
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305519
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DISCARDED_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305220
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305520
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SIC_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305221
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305521
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CHAR1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305222
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305522
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CHAR2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305223
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305523
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CHAR3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305224
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305524
+              stepCounter: "12802"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUM1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305225
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305525
+              stepCounter: "12802"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUM2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305226
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305526
+              stepCounter: "12802"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUM3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305227
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305527
+              stepCounter: "12802"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DATE1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305228
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305528
+              stepCounter: "12802"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DATE2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305229
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305529
+              stepCounter: "12802"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DATE3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305230
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305530
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_CREATED_BY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305231
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305531
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_UPDATED_BY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305232
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305532
+              stepCounter: "12802"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_CREATE_TIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305233
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305533
+              stepCounter: "12802"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_UPDATE_TIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305234
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305534
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LEGACY_DATA_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305235
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305535
+              stepCounter: "12802"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOSS_FREE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305236
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305536
+              stepCounter: "12802"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CLAIMS_FREE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305237
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305537
+              stepCounter: "12802"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: INSURED_SINCE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305238
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305538
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DYNAMIC_CLAIM_ENTRY_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305239
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305539
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: INDUSTRY_DESC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305240
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305540
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COMPONENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305241
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305541
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ENTITY_STATUS_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305242
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305542
+              stepCounter: "12802"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FAKE_ADA_NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305243
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305543
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ADA_NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305244
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305544
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: WEB_ADDRESS1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305245
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305545
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: WEB_ADDRESS2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305246
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305546
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: WEB_ADDRESS3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305247
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305547
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: WEB_USER_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305248
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305548
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: WEB_USER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305249
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305549
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DBA_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305250
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305550
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HICN
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305251
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305551
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LEGAL_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305252
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305552
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CHAR4
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305253
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305553
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CHAR5
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305254
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305554
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: REFERENCE_NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305255
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305555
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PROF_DESIGNATION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305256
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305556
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ELECTRONIC_DISTRB_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305257
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305557
+              stepCounter: "12802"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LEGAL_NAME_EFFECTIVE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305258
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305558
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EXTERNAL_DATA_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305259
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305559
+              stepCounter: "12802"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NPI_NO
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305260
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305560
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CMS_BENEFICIARY_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305261
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305561
+              stepCounter: "12802"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DSS_RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305262
+                    stepCounter: "12798"
+                transform: ""
+          - columnReference:
+              columnCounter: 305562
+              stepCounter: "12802"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DSS_LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305263
+                    stepCounter: "12798"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305563
+              stepCounter: "12802"
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemVersion: true
+            name: SYSTEM_VERSION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305564
+              stepCounter: "12802"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCurrentFlag: true
+            name: SYSTEM_CURRENT_FLAG
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305565
+              stepCounter: "12802"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemStartDate: true
+            name: SYSTEM_START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305566
+              stepCounter: "12802"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemEndDate: true
+            name: SYSTEM_END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305567
+              stepCounter: "12802"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 305568
+              stepCounter: "12802"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SRC
+                nodeName: B_ENTITY
+            join:
+              joinCondition: FROM {{ ref('SRC', 'B_ENTITY') }} "B_ENTITY"
+            name: PSTG_B_ENTITY
+            noLinkRefs: []
+      name: PSTG_B_ENTITY
+      overrideSQL: false
+      schema: ""
+      sqlType: persistentStage
+      type: sql
+    stepCounter: "12802"
