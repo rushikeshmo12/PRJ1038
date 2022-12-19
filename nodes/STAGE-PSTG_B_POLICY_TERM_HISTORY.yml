@@ -7,7 +7,7 @@ steps:
         testsEnabled: true
       database: ""
       dependencies: []
-      deployEnabled: false
+      deployEnabled: true
       description: ""
       isDataVault: false
       isMultisource: false
