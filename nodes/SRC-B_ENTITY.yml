@@ -3,7 +3,7 @@ steps:
     operation:
       database: ""
       dataset: ""
-      deployEnabled: true
+      deployEnabled: false
       locationID: ""
       locationName: SRC
       metadata:
