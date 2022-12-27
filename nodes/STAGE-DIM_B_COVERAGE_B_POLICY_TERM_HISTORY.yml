@@ -1,0 +1,358 @@
+steps:
+  DIM_B_COVERAGE_B_POLICY_TERM_HISTORY-12813:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 307027
+              stepCounter: "12813"
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSurrogateKey: true
+            name: DIM_B_COVERAGE_B_POLICY_TERM_HISTORY_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 307028
+              stepCounter: "12813"
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PSTG_B_COVERAGE_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306450
+                    stepCounter: "12807"
+                transform: ""
+          - columnReference:
+              columnCounter: 307029
+              stepCounter: "12813"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COVERAGE_PK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306451
+                    stepCounter: "12807"
+                transform: ""
+          - columnReference:
+              columnCounter: 307030
+              stepCounter: "12813"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRODUCT_COVERAGE_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306452
+                    stepCounter: "12807"
+                transform: ""
+          - columnReference:
+              columnCounter: 307031
+              stepCounter: "12813"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RISK_BASE_RECORD_FK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306453
+                    stepCounter: "12807"
+                transform: ""
+          - columnReference:
+              columnCounter: 307032
+              stepCounter: "12813"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COVERAGE_BASE_RECORD_FK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306454
+                    stepCounter: "12807"
+                transform: ""
+          - columnReference:
+              columnCounter: 307218
+              stepCounter: "12813"
+            dataType: NUMBER(38,0)
+            description: ""
+            name: POLICY_FK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306552
+                    stepCounter: "12808"
+                transform: ""
+          - columnReference:
+              columnCounter: 307033
+              stepCounter: "12813"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TO_RATE_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306455
+                    stepCounter: "12807"
+                transform: ""
+          - columnReference:
+              columnCounter: 307034
+              stepCounter: "12813"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TERM_BASE_RECORD_FK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306456
+                    stepCounter: "12807"
+                transform: ""
+          - columnReference:
+              columnCounter: 307035
+              stepCounter: "12813"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CURR_POL_REL_STAT_TYPE_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306457
+                    stepCounter: "12807"
+                transform: ""
+          - columnReference:
+              columnCounter: 307036
+              stepCounter: "12813"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CURR_POL_REL_STAT_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306458
+                    stepCounter: "12807"
+                transform: ""
+          - columnReference:
+              columnCounter: 307037
+              stepCounter: "12813"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CURR_POL_REL_REASON_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306459
+                    stepCounter: "12807"
+                transform: ""
+          - columnReference:
+              columnCounter: 307038
+              stepCounter: "12813"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COVERAGE_LIMIT_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306460
+                    stepCounter: "12807"
+                transform: ""
+          - columnReference:
+              columnCounter: 307039
+              stepCounter: "12813"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: BASE_RECORD_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306461
+                    stepCounter: "12807"
+                transform: ""
+          - columnReference:
+              columnCounter: 307040
+              stepCounter: "12813"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_MODE_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306462
+                    stepCounter: "12807"
+                transform: ""
+          - columnReference:
+              columnCounter: 307041
+              stepCounter: "12813"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OFFICIAL_RECORD_FK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306463
+                    stepCounter: "12807"
+                transform: ""
+          - columnReference:
+              columnCounter: 307042
+              stepCounter: "12813"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AUTO_RENEW_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306464
+                    stepCounter: "12807"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 307213
+              stepCounter: "12813"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemStartDate: true
+            name: SYSTEM_START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 307214
+              stepCounter: "12813"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemEndDate: true
+            name: SYSTEM_END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 307215
+              stepCounter: "12813"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 307216
+              stepCounter: "12813"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_B_COVERAGE: "12807"
+              STG_B_POLICY_TERM_HISTORY: "12808"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STG_B_COVERAGE
+              - locationName: STAGE
+                nodeName: STG_B_POLICY_TERM_HISTORY
+            join:
+              joinCondition: |-
+                FROM {{ ref('STAGE', 'STG_B_COVERAGE') }} "STG_B_COVERAGE"
+                INNER JOIN {{ ref('STAGE', 'STG_B_POLICY_TERM_HISTORY') }} "STG_B_POLICY_TERM_HISTORY"
+                ON "STG_B_COVERAGE"."COVERAGE_PK" = "STG_B_POLICY_TERM_HISTORY"."POLICY_FK"
+            name: DIM_B_COVERAGE_B_POLICY_TERM_HISTORY
+            noLinkRefs: []
+      name: DIM_B_COVERAGE_B_POLICY_TERM_HISTORY
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: "12813"

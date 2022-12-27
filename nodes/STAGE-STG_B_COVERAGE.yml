@@ -1,0 +1,1439 @@
+steps:
+  STG_B_COVERAGE-12807:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 306450
+              stepCounter: "12807"
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PSTG_B_COVERAGE_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305385
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306451
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COVERAGE_PK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305386
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306452
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRODUCT_COVERAGE_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305387
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306453
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RISK_BASE_RECORD_FK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305388
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306454
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COVERAGE_BASE_RECORD_FK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305389
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306455
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TO_RATE_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305390
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306456
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TERM_BASE_RECORD_FK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305391
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306457
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CURR_POL_REL_STAT_TYPE_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305392
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306458
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CURR_POL_REL_STAT_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305393
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306459
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CURR_POL_REL_REASON_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305394
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306460
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COVERAGE_LIMIT_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305395
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306461
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: BASE_RECORD_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305396
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306462
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_MODE_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305397
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306463
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OFFICIAL_RECORD_FK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305398
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306464
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AUTO_RENEW_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305399
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306465
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TRANSACTION_LOG_FK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305400
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306466
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SHARED_LIMIT_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305401
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306467
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RETROACTIVE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305402
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306468
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRIMARY_COVERAGE_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305403
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306469
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RATING_BASIS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305404
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306470
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CANCELLATION_METHOD_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305405
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306471
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CLOSING_TRANS_LOG_FK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305406
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306472
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AFTER_IMAGE_RECORD_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305407
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306473
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: INCIDENT_LIMIT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305408
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306474
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EXTENDED_AGGREGATE_LIMIT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305409
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306475
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RATE_PAYOR_DEPEND_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305410
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306476
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EFFECTIVE_FROM_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305411
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306477
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EFFECTIVE_TO_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305412
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306478
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNTING_FROM_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305413
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306479
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNTING_TO_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305414
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306480
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_CREATED_BY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305415
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306481
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_UPDATED_BY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305416
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306482
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_CREATE_TIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305417
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306483
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_UPDATE_TIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305418
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306484
+              stepCounter: "12807"
+            dataType: NUMBER(30,2)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ANNUAL_BASE_RATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305419
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306485
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SUBLIMIT_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305420
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306486
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRIORACTS_RETRO_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305421
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306487
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PCF_COUNTY_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305422
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306488
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PCF_PARTICIPATION_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305423
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306489
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DEDUCTIBLE_COMP_FK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305424
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306490
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EXPOSURE_UNIT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305425
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306491
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PARENT_COVERAGE_BASE_RECORD_FK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305426
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306492
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COVG_PART_SHARED_LIMIT_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305427
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306493
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: INSURED_SINCE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305428
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306494
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CANCEL_TYPE_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305429
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306495
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STATE_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305430
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306496
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CHAR1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305431
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306497
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CHAR2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305432
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306498
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CHAR3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305433
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306499
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUM1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305434
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306500
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUM2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305435
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306501
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUM3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305436
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306502
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DATE1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305437
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306503
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DATE2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305438
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306504
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DATE3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305439
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306505
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DEFAULT_AMT_OF_INSURANCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305440
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306506
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ADDTL_AMT_OF_INSURANCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305441
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306507
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOSS_OF_INCOME_DAYS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305442
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306508
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LEGACY_DATA_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305443
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306509
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SPLIT_RETRO_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305444
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306510
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ADJ_INCIDENT_LIMIT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305445
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306511
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ADJ_AGGREGATE_LIMIT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305446
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306512
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CLAIMS_MADE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305447
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306513
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUMBER_OF_PATIENT_DAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305448
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306514
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COVERAGE_DESC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305449
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306515
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: BUILDING_RATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305450
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306516
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: USED_FOR_FORECAST_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305451
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306517
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DIRECT_PRIMARY_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305452
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306518
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYMBOL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305453
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306519
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRIMARY_EXPOSURE_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305454
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306520
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LIMIT_EROSION_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305455
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306521
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CM_CONV_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305456
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306522
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CM_CONV_OVERRIDE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305457
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306523
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OC_CONV_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305458
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306524
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OC_CONV_OVERRIDE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305459
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306525
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MANUAL_INCIDENT_LIMIT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305460
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306526
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MANUAL_AGGREGATE_LIMIT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305461
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306527
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MANUAL_DED_SIR_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305462
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306528
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MANUAL_DED_SIR_INC_VALUE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305463
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306529
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MANUAL_DED_SIR_AGG_VALUE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305464
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306530
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: INDEMNITY_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305465
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306531
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PER_DAY_LIMIT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305466
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306532
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EXT_TAIL_LIM_B
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305467
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306533
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IBNR_EFFECTIVE_FROM_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305468
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306534
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IBNR_EFFECTIVE_TO_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305469
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306535
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CLAIM_PROCESS_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305470
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306536
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FORM_RETROACTIVE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305471
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306537
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUMBER_OF_PHYSICIANS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305472
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306538
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EXPOSURE_DESC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305473
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306539
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MANUAL_SUBJECT_PREMIUM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305474
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306540
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TAIL_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305475
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306541
+              stepCounter: "12807"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PCF_COMPLIANCE_YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305476
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306542
+              stepCounter: "12807"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DSS_RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305477
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306543
+              stepCounter: "12807"
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DSS_LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305478
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306544
+              stepCounter: "12807"
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYSTEM_VERSION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305479
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306545
+              stepCounter: "12807"
+            dataType: VARCHAR
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYSTEM_CURRENT_FLAG
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305480
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306546
+              stepCounter: "12807"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYSTEM_START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305481
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306547
+              stepCounter: "12807"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYSTEM_END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305482
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306548
+              stepCounter: "12807"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305483
+                    stepCounter: "12801"
+                transform: ""
+          - columnReference:
+              columnCounter: 306549
+              stepCounter: "12807"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305484
+                    stepCounter: "12801"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: PSTG_B_COVERAGE
+            join:
+              joinCondition: FROM {{ ref('STAGE', 'PSTG_B_COVERAGE') }} "PSTG_B_COVERAGE"
+            name: STG_B_COVERAGE
+            noLinkRefs: []
+      name: STG_B_COVERAGE
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: "12807"

@@ -1,0 +1,241 @@
+steps:
+  STG_B_ENTITY_B_POLICY-12806:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 306399
+              stepCounter: "12806"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POLICY_PK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305570
+                    stepCounter: "12803"
+                transform: ""
+          - columnReference:
+              columnCounter: 306400
+              stepCounter: "12806"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POLICY_NO
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305571
+                    stepCounter: "12803"
+                transform: ""
+          - columnReference:
+              columnCounter: 306315
+              stepCounter: "12806"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ENTITY_PK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305486
+                    stepCounter: "12802"
+                transform: ""
+          - columnReference:
+              columnCounter: 306316
+              stepCounter: "12806"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CLIENT_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305487
+                    stepCounter: "12802"
+                transform: ""
+          - columnReference:
+              columnCounter: 306317
+              stepCounter: "12806"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: GENDER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305488
+                    stepCounter: "12802"
+                transform: ""
+          - columnReference:
+              columnCounter: 306318
+              stepCounter: "12806"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ENTITY_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305489
+                    stepCounter: "12802"
+                transform: ""
+          - columnReference:
+              columnCounter: 306319
+              stepCounter: "12806"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRST_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305490
+                    stepCounter: "12802"
+                transform: ""
+          - columnReference:
+              columnCounter: 306320
+              stepCounter: "12806"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRST_NAME_UPPER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305491
+                    stepCounter: "12802"
+                transform: ""
+          - columnReference:
+              columnCounter: 306321
+              stepCounter: "12806"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MIDDLE_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305492
+                    stepCounter: "12802"
+                transform: ""
+          - columnReference:
+              columnCounter: 306322
+              stepCounter: "12806"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305493
+                    stepCounter: "12802"
+                transform: ""
+          - columnReference:
+              columnCounter: 306323
+              stepCounter: "12806"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME_UPPER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305494
+                    stepCounter: "12802"
+                transform: ""
+          - columnReference:
+              columnCounter: 306324
+              stepCounter: "12806"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME_SOUNDEX
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305495
+                    stepCounter: "12802"
+                transform: ""
+          - columnReference:
+              columnCounter: 306325
+              stepCounter: "12806"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORGANIZATION_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305496
+                    stepCounter: "12802"
+                transform: ""
+          - columnReference:
+              columnCounter: 306326
+              stepCounter: "12806"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORGANIZATION_NAME_UPPER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305497
+                    stepCounter: "12802"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: PSTG_B_ENTITY
+              - locationName: STAGE
+                nodeName: PSTG_B_POLICY
+            join:
+              joinCondition: |-
+                FROM {{ ref('STAGE', 'PSTG_B_ENTITY') }} "PSTG_B_ENTITY"
+                LEFT JOIN {{ ref('STAGE', 'PSTG_B_POLICY') }} "PSTG_B_POLICY"
+                ON "PSTG_B_ENTITY".CLIENT_ID = "PSTG_B_POLICY"."POLICY_NO";
+            name: STG_B_ENTITY_B_POLICY
+            noLinkRefs: []
+      name: STG_B_ENTITY_B_POLICY
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: "12806"

@@ -1,0 +1,234 @@
+steps:
+  DIM_B_ENTITY_B_POLICY-12814:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 307220
+              stepCounter: "12814"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: POLICY_PK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306399
+                    stepCounter: "12806"
+                transform: ""
+          - columnReference:
+              columnCounter: 307221
+              stepCounter: "12814"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: POLICY_NO
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306400
+                    stepCounter: "12806"
+                transform: ""
+          - columnReference:
+              columnCounter: 307222
+              stepCounter: "12814"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ENTITY_PK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306315
+                    stepCounter: "12806"
+                transform: ""
+          - columnReference:
+              columnCounter: 307223
+              stepCounter: "12814"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CLIENT_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306316
+                    stepCounter: "12806"
+                transform: ""
+          - columnReference:
+              columnCounter: 307224
+              stepCounter: "12814"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: GENDER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306317
+                    stepCounter: "12806"
+                transform: ""
+          - columnReference:
+              columnCounter: 307225
+              stepCounter: "12814"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ENTITY_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306318
+                    stepCounter: "12806"
+                transform: ""
+          - columnReference:
+              columnCounter: 307226
+              stepCounter: "12814"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRST_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306319
+                    stepCounter: "12806"
+                transform: ""
+          - columnReference:
+              columnCounter: 307227
+              stepCounter: "12814"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRST_NAME_UPPER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306320
+                    stepCounter: "12806"
+                transform: ""
+          - columnReference:
+              columnCounter: 307228
+              stepCounter: "12814"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MIDDLE_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306321
+                    stepCounter: "12806"
+                transform: ""
+          - columnReference:
+              columnCounter: 307229
+              stepCounter: "12814"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306322
+                    stepCounter: "12806"
+                transform: ""
+          - columnReference:
+              columnCounter: 307230
+              stepCounter: "12814"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME_UPPER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306323
+                    stepCounter: "12806"
+                transform: ""
+          - columnReference:
+              columnCounter: 307231
+              stepCounter: "12814"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME_SOUNDEX
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306324
+                    stepCounter: "12806"
+                transform: ""
+          - columnReference:
+              columnCounter: 307232
+              stepCounter: "12814"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORGANIZATION_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306325
+                    stepCounter: "12806"
+                transform: ""
+          - columnReference:
+              columnCounter: 307233
+              stepCounter: "12814"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORGANIZATION_NAME_UPPER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306326
+                    stepCounter: "12806"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STG_B_ENTITY_B_POLICY
+            join:
+              joinCondition: FROM {{ ref('STAGE', 'STG_B_ENTITY_B_POLICY') }} "STG_B_ENTITY_B_POLICY"
+            name: DIM_B_ENTITY_B_POLICY
+            noLinkRefs: []
+      name: DIM_B_ENTITY_B_POLICY
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: "12814"
